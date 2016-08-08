@@ -1,0 +1,34 @@
+.container{
+	width: 95%;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	margin-bottom: 13em;
+	border: 1px solid #c4c4c4;
+	border-radius: 3px;
+	background-color: white;
+}
+
+label{
+	width: 13%;
+}
+
+.container input,.container select {
+	margin : 10px;
+	min-width: 25%;
+	height: 25px;
+}
+
+.input-form{
+	margin-bottom: 15px;
+}
+
+.btn {
+	margin: 5px;
+	width: 100px;
+}
+
+.radio{
+	display: inline-block;
+	min-width: 10%!important;
+	height: auto!important;
+}

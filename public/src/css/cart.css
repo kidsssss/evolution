@@ -1,0 +1,7 @@
+/*MEDIA*/
+@media (min-width: 992px){
+.col-md-8 {
+    width: 62.66666667%;
+    margin-right:15px;
+}
+}

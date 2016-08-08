@@ -1,0 +1,13 @@
+.user_form{
+	margin: 20px 10%;
+}
+
+.user_form .input-form{
+	margin: 15px;
+}
+
+.user_form input{
+	margin-left: 15px;
+	min-width: 300px;
+}
+

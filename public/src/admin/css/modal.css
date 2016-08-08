@@ -1,0 +1,14 @@
+.main{
+    margin: 0!important;
+}
+
+body{
+        background: #f1f4f7!important;
+}
+
+@media (min-width: 1200px){
+
+    .container {
+    width: 1000px!important;
+}
+}

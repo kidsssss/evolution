@@ -1,0 +1,17 @@
+#bx-pager{
+	margin: 0 auto;
+}
+
+#bx-pager a{
+	width: 10px;
+	
+}
+
+#bx-pager a img{
+	width: 100px;
+	border: 1px solid #D6D6D6;
+}
+
+#bx-pager .active img{
+	border: solid #5280DD 1px!important;
+}

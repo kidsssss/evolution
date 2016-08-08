@@ -1,0 +1,34 @@
+.container{
+	width: 95%;
+}
+
+.search {
+	margin-bottom: 15px;
+}
+
+.search input{
+	min-width: 250px;
+}
+
+.add{
+	padding: 15px 0;
+	border-top: 1px solid #C4C4C4;
+}
+
+.list th, .list td{
+	padding: 20px 15px 15px 15px;
+	font-size: 15px;
+}
+
+.list table{
+	border: 1;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid black;
+}

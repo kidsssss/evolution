@@ -1,0 +1,75 @@
+.container{
+	width: 90%;
+}
+
+
+
+#add-brand{
+	width: 100%;
+	padding: 20px;
+	background: #e0e0e0;
+	border-radius: 3px;
+}
+
+.input-form{
+	width: 90%;
+	margin: 0 auto;
+}
+
+.brands{
+	margin:39px 0 15px 0;
+	background: #e0e0e0;
+	border-radius: 3px;
+	padding: 15px;
+}
+
+.brands article{
+	width: 90%;
+	margin: 0 auto;
+	padding-top:10px; 
+	padding-bottom: 10px;
+}
+
+.brand{
+	background-color: white;
+	padding: 10px;
+	border:2px solid #b4b4b4;
+}
+
+.brand ul{
+	list-style-type: none;
+	padding-left: 10px;
+	margin: 0;
+	margin-top: 5px;
+}
+
+.brand li{
+	display: inline-block;
+	margin: 0 5px 0 5px;
+}
+
+.brand h3{
+	padding-left: 10px;
+	margin:0;
+}
+
+.danger{
+	color: red;
+}
+
+.danger:hover{
+	color: red;
+}
+
+li.brand-edit{
+	display: none;
+}
+
+li.brand-edit input {
+	transition: all 0.3s;
+	max-width: 150px;
+}
+
+li.update, li.cancel{
+	display: none;
+}
