@@ -72,7 +72,7 @@
                   <p><?php
                   echo number_format($newProduct->price).'đ';
                   ?></p>
-                  <a href="#"><button class="btn hv">Thêm Vào Giỏ</button class="btn hv"></a>
+                  <a href="{{route('frontend.order',['product_slug'=>$newProduct->slug])}}"><button class="btn hv">Thêm Vào Giỏ</button class="btn hv"></a>
                 </div>
               </li>
             @endforeach

@@ -18,6 +18,13 @@ class CartController extends Controller
       return redirect()->route('frontend.cart');
     }
 
+    public function postOrder(Request $request){
+      $product = Product::where('slug',$request['product_slug'])->first();
+      Cart::add(['id'=>$product->id,'name'=>$product->name,'qty'=>$request['qty'],'price'=>$product->price,'options'=>['img'=>$product->front_img,'slug'=>$product->slug]]);
+      $cartItems = Cart::content();
+      return redirect()->route('frontend.cart');
+    }
+
     public function getCart(){
       $categories = Category::all();
       $brands = Brand::all();

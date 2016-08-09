@@ -22,7 +22,7 @@
                 <a href="{{route('frontend.product',['product_slug'=>$product->slug])}}"><img class="img-responsive" src="{!!url::to('uploads/'.$product->slug.'/'.$product->front_img) !!}"></a>
                 <a href="{{route('frontend.product',['product_slug'=>$product->slug])}}"><h4>{{$product->name}}</h4></a>
                 <p><?php echo number_format($product->price).'đ' ?></p>
-                <a href="#"><button class="btn hv">Thêm Vào Giỏ</button class="btn hv"></a>
+                <a href="{{route('frontend.order',['product_slug'=>$product->slug])}"><button class="btn hv">Thêm Vào Giỏ</button class="btn hv"></a>
               </div>
             </li>
         @endforeach

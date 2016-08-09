@@ -9,8 +9,11 @@
           <div class="top-right">
             <ul>
               @if(Auth::check())
+                @if(Auth::user()->class === 1)
+                <li><a href="{{route('admin.index')}}">Admin</a></li>
+                @endif
               <li><a href="{{route('frontend.user.cart',['id'=>Auth::user()->email])}}">{{Auth::user()->real_name}}</a></li>
-              <li><a href="{{route('frontend.get.logout')}}">Đăng Xuất</a></li>
+              <li><a href="">Đăng Xuất</a></li>
             @else
               <li><a href="{{route('frontend.get.signup')}}">Đăng Ký</a></li>
               <li><a href="{{route('frontend.get.login')}}">Đăng Nhập</a></li>

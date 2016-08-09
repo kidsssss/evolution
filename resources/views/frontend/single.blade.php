@@ -50,10 +50,12 @@
               @endif
           
           <h4><span><?php echo number_format($product->price) ?></span>đ</h4>
-          <form action="" method="get">
+          <form action="{{route('frontend.post.buy')}}" method="post">
             <label for="quantity">Số Lượng</label>
-            <input id="quantity" type="number" name="quantity" min="1" value="1" class="tc item-quantity">
-            <a href="#" class="btn btn-success cart">Thêm vào Giỏ</a>
+            <input id="quantity" type="number" name="qty" min="1" value="1" class="tc item-quantity">
+            <input type="hidden" name="product_slug" value="{{$product->slug}}">
+            <input type="hidden" name="_token" value="{{csrf_token()}}">
+            <button type="submit" class="btn btn-success cart">Thêm vào Giỏ</button>
           </form>
           <div class="produc-description">
             <h4>Mô Tả Sản Phẩm</h4>

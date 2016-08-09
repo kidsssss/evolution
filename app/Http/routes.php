@@ -30,9 +30,14 @@ Route::get('products/{address}/{address2?}/',[
 
 //////////ORDER///////////////
 
-Route::get('order/{product_slug}',[
+Route::get('order/{product_slug}/',[
   'uses' => 'CartController@getOrder',
   'as' => 'frontend.order'
+  ]);
+
+Route::post('order/post',[
+  'uses' => 'CartController@postOrder',
+  'as' => 'frontend.post.buy'
   ]);
 
 Route::get('cart',[
@@ -101,9 +106,10 @@ Route::group([
   'prefix'=>'admin',
   'middleware' => ['auth','admin'],
    ],function(){
-  Route::get('index',function(){
-    return view('admin/index');
-  });
+  Route::get('index',[
+    'uses' => 'ProductController@adminIndex',
+    'as' => 'admin.index'
+    ]);
 //Get Brands
   Route::get('brands',[
     'uses' => 'BrandController@getBrandIndex',

@@ -71,6 +71,7 @@ class ProductController extends Controller
 
 
     public function getFrontendSingleProduct($product_slug){
+      $totalQty = Cart::count();
       $categories = Category::all();
       $brands = Brand::all();
       $product = Product::where('slug',$product_slug)->first();
@@ -81,6 +82,10 @@ class ProductController extends Controller
 
 
     ///////////////////// BACKEND /////////////////////////////////////////////////////////
+
+    public function adminIndex(){
+      return view('admin.index');
+    }
 
     public function getProductIndex(){
       $products = Product::get();
